@@ -3,7 +3,7 @@ import imageto from "../Assets/images/machine08.jpeg";
 const Aboutus = () => {
   return (
     <div className="container" id="about">
-      <h1 className="text-center text-capitalize pt-4">about us</h1>
+      <h1 className="text-center text-capitalize pt-4">Who we are ?</h1>
 
       <div className="row featurette mt-4 mb-5">
         <div className="col-md-5">

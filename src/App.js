@@ -15,10 +15,10 @@ function App() {
     <div className="App">
       <Header />
       <Slider />
-      <Gallery />
       <Services />
       <Bluebox />
       <Aboutus />
+      <Gallery />
       <Contactus />
       <Footer />
     </div>

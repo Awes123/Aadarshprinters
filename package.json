@@ -2,23 +2,34 @@
   "name": "aadarsh",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:3001/",
   "dependencies": {
+    "@material-ui/core": "^4.11.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "aos": "^2.3.4",
+    "axios": "^0.20.0",
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.3.0",
+    "express": "^4.17.1",
+    "gmail-send": "^1.8.10",
     "mdbootstrap": "^4.19.1",
+    "nodemailer": "^6.4.13",
+    "nodemon": "^2.0.4",
     "react": "^16.13.1",
     "react-animated-slider": "^2.0.0",
     "react-bootstrap": "^1.3.0",
     "react-dom": "^16.13.1",
     "react-responsive-carousel": "^3.2.10",
-    "react-scripts": "3.4.3"
+    "react-scripts": "3.4.3",
+    "save": "^2.4.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "node indexx.js",
+    "server": "nodemon indexx.js",
+    "client": "npm run start prefix client",
+    "dev": "concurrently \"npm run server\"\"npm run client\""
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -34,5 +45,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

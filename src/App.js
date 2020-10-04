@@ -10,15 +10,19 @@ import Services from "./Components/Services";
 import Bluebox from "./Components/Bluebox";
 import Aboutus from "./Components/Aboutus";
 import Contactus from "./Components/Contactus";
+import Whychoosus from "./Components/Whychoosus";
+import Commercial from "./Components/Commercial";
 function App() {
   return (
     <div className="App">
       <Header />
       <Slider />
-      <Services />
-      <Bluebox />
       <Aboutus />
+      <Services />
+      <Whychoosus />
+      <Commercial />
       <Gallery />
+      <Bluebox />
       <Contactus />
       <Footer />
     </div>

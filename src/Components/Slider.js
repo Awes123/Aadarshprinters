@@ -1,22 +1,29 @@
-import React from "react";
+import React, { useState, useEffect, useContext } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Carousel from "react-bootstrap/Carousel";
 import imageone from "../Assets/images/machine02.jpeg";
 import imageto from "../Assets/images/machine08.jpeg";
 import imagethree from "../Assets/images/machine01.jpeg";
 
 const Slider = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 3000,
+    });
+  }, []);
   return (
-    <Carousel id="sider">
+    <Carousel id="sider" data-aos="flip-down">
       <Carousel.Item>
         <img className="d-block w-100" src={imageone} alt="First slide" />
         <div
           className="mask"
           style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}
         ></div>
-        <Carousel.Caption>
+        {/* <Carousel.Caption>
           <h3>First slide label</h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
+        </Carousel.Caption> */}
       </Carousel.Item>
       <Carousel.Item>
         <img className="d-block w-100" src={imageto} alt="Second slide" />
@@ -24,10 +31,10 @@ const Slider = () => {
           className="mask"
           style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}
         ></div>
-        <Carousel.Caption>
+        {/* <Carousel.Caption>
           <h3>Second slide label</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
+        </Carousel.Caption> */}
       </Carousel.Item>
       <Carousel.Item>
         <img className="d-block w-100" src={imagethree} alt="Third slide" />
@@ -35,12 +42,12 @@ const Slider = () => {
           className="mask"
           style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}
         ></div>
-        <Carousel.Caption>
+        {/* <Carousel.Caption>
           <h3>Third slide label</h3>
           <p>
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </p>
-        </Carousel.Caption>
+        </Carousel.Caption> */}
       </Carousel.Item>
     </Carousel>
   );

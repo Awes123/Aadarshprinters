@@ -1,12 +1,12 @@
 import React from "react";
-
+import ima from "../Assets/images/pnglogo.png";
 const footer = () => {
   return (
     <footer
       class=" page-footer font-small text-dark"
-      style={{ backgroundColor: "#6c757dd1" }}
+      style={{ backgroundColor: "#6c757dd1", fontFamily: "Quicksand" }}
     >
-      <div style={{ backgroundColor: "#21d192" }}>
+      <div style={{ backgroundColor: "#589272" }}>
         <div class="container">
           <div class="row py-4 d-flex align-items-center">
             <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
@@ -36,51 +36,51 @@ const footer = () => {
       <div class=" text-center text-md-left mt-5">
         <div class="row mt-3 dark-grey-text">
           <div class=" container col-md-3 col-lg-4 col-xl-3 mb-4">
-            <h6 class="text-uppercase font-weight-bold">Company name</h6>
-            <p>
+            <img src={ima} alt="Logo" style={{ width: 234, height: 116 }} />
+            {/* <p>
               Here you can use rows and columns to organize your footer content.
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            </p>
+            </p> */}
           </div>
 
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-            <h6 class="text-uppercase font-weight-bold">Products</h6>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto ml-5 mt-2">
+            <h6 class="text-uppercase font-weight-bold">Services</h6>
             <p>
               <a class="text-dark" href="#!">
-                MDBootstrap
+                Prescription Pad
               </a>
             </p>
             <p>
               <a class="text-dark" href="#!">
-                MDWordPress
+                Hospital Files
               </a>
             </p>
             <p>
               <a class="text-dark" href="#!">
-                BrandFlow
+                Leaflets & Flyer
               </a>
             </p>
             <p>
               <a class="text-dark" href="#!">
-                Bootstrap Angular
+                Stickers
               </a>
             </p>
           </div>
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-            <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+            <h6 class="text-uppercase font-weight-bold"></h6>
             <p>
               <a class="text-dark" href="#!">
-                Your Account
+                Notebooks
               </a>
             </p>
             <p>
               <a class="text-dark" href="#!">
-                Become an Affiliate
+                School Diary
               </a>
             </p>
             <p>
               <a class="text-dark" href="#!">
-                Shipping Rates
+                Corporate, Social Sector
               </a>
             </p>
             <p>
@@ -93,25 +93,32 @@ const footer = () => {
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
             <h6 class="text-uppercase font-weight-bold">Contact</h6>
             <p>
-              <i class="fas fa-home mr-3"></i> New York, NY 10012, US
+              <i class="fas fa-home mr-3"></i> Plot No 23, Town Center, CIDCO N
+              1, Aurangabad-Maharashtra - 431006.
             </p>
             <p>
-              <i class="fas fa-envelope mr-3"></i> info@example.com
+              <i class="fas fa-envelope mr-3"></i> aadarsh9561@gmail.com
             </p>
             <p>
-              <i class="fas fa-phone mr-3"></i> + 01 234 567 88
+              <i class="fas fa-phone mr-3"></i> +919561801015
             </p>
             <p>
-              <i class="fas fa-print mr-3"></i> + 01 234 567 89
+              <i class="fas fa-phone mr-3"></i> +919764178089
             </p>
           </div>
         </div>
-        <div class="footer-copyright text-white text-center bg-dark py-3">
-          © 2020 Copyright:
-          <a class="text-white ml-2" href="https://mdbootstrap.com/">
-            {" "}
-            www.Quadintelletcx.com
-          </a>
+        <div class="footer-copyright row col-lg-12 bg-dark text-white text-center py-3">
+          <div class="col-lg-6">© 2020 Copyright: Aadarsh Printers</div>
+          <div class="col-lg-6">
+            Developed by:
+            <a
+              href="https://www.quadintellectx.com/"
+              class="ml-2"
+              style={{ color: "rgb(255, 255, 255)" }}
+            >
+              www.Quadintelletcx.com
+            </a>
+          </div>
         </div>
       </div>
     </footer>

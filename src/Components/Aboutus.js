@@ -1,31 +1,53 @@
-import React from "react";
-import imageto from "../Assets/images/machine08.jpeg";
+import React, { useState, useEffect, useContext } from "react";
+import imageto from "../Assets/images/flower1.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Aboutus = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 3000,
+    });
+  }, []);
   return (
     <div className="container" id="about">
-      <h1 className="text-center text-capitalize pt-4">Who we are ?</h1>
+      <div
+        className="jumbotron text-center blue-grey lighten-5"
+        style={{ marginTop: -77 }}
+        data-aos="flip-up"
+      >
+        <h2
+          className="card-title h2"
+          style={{ marginTop: -39, fontFamily: "Quicksand" }}
+        >
+          Who We Are ?
+        </h2>
 
-      <div className="row featurette mt-4 mb-5">
-        <div className="col-md-5">
-          <img src={imageto} height="500" width="500" />
+        <p
+          className="indigo-text my-4 font-weight-bold"
+          style={{ fontFamily: "Quicksand" }}
+        >
+          Aadarsh Printers is in the service since 2015
+        </p>
+
+        <div className="row d-flex justify-content-center">
+          <div className="col-xl-7 pb-2">
+            <p className="card-text" style={{ fontFamily: "Quicksand" }}>
+              Welcome to Aadarsh prinetrs, your number one source in the era of
+              printing. We're dedicated to providing you the best of services,
+              with a focus on good quality, customer service, and full customer
+              satisfaction. We hope you enjoy our products as much as we enjoy
+              offering them to you. If you have any questions or comments,
+              please don't hesitate to contact us.
+            </p>
+          </div>
         </div>
-        <div className="col-md-5 ml-5">
-          <h2 className="featurette-heading">
-            Aadarsh <span className="text-muted">Printers</span>
-          </h2>
-          <p className="lead">
-            Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
-            ligula porta felis euismod semper. Praesent commodo cursus magna,
-            vel scelerisque nisl consectetur. Fusce dapibus,tellus ac cursus
-            commodo. Donec ullamcorper nulla non metus auctor fringilla.
-            Vestibulum id ligula porta felis euismod semper. Praesent commodo
-            cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,tellus
-            ac cursus commodo.Donec ullamcorper nulla non metus auctor
-            fringilla. Vestibulum id ligula porta felis euismod semper. Praesent
-            commodo cursus magna, vel scelerisque nisl consectetur. Fusce
-            dapibus,tellus ac cursus commodo.
-          </p>
-        </div>
+        <img
+          src={imageto}
+          className="mr-4"
+          height="160"
+          width="160"
+          style={{ position: "absolute", marginTop: -100, right: 0 }}
+        />
       </div>
     </div>
   );

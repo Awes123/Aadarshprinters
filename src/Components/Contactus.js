@@ -78,7 +78,7 @@ const Contactus = () => {
                       type="text"
                       id="defaultContactFormEmail"
                       className="form-control mb-4"
-                      placeholder="Name"
+                      placeholder="Enter Name"
                       value={name}
                       onChange={(e) => setName(e.target.value)}
                     />
@@ -88,7 +88,7 @@ const Contactus = () => {
                       type="email"
                       id="defaultContactFormEmail"
                       className="form-control mb-4"
-                      placeholder="E-mail"
+                      placeholder="Enter E-mail"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                     />
@@ -98,7 +98,7 @@ const Contactus = () => {
                       type="number"
                       id="defaultContactFormEmail"
                       className="form-control mb-4"
-                      placeholder="Mobile"
+                      placeholder="Enter Mobile"
                       value={mobile}
                       onChange={(e) => setMobile(e.target.value)}
                     />

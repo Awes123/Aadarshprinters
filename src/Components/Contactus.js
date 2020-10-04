@@ -11,14 +11,13 @@ const Contactus = () => {
   const [mobile, setMobile] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
-  const handleSubmit = () => {
-   const from = await Axios.post('/api/form',{
-    name,
-    email,
-    mobile,
-    message
-
-   }) 
+  const handleSubmit = async () => {
+    const from = await Axios.post("/api/form", {
+      name,
+      email,
+      mobile,
+      message,
+    });
   };
   useEffect(() => {
     AOS.init({
